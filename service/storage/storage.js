@@ -6,17 +6,15 @@ const { Readable } = require('stream');
 const { Client } = require('minio');
 const { create } = require('../task/controllers/task.service');
 // save data worker
-
-const host = '127.0.0.1'; 
-const port = 9000
+require('dotenv').config()
 const client = new Client({
-  endPoint: host,
-  port: port,
+  endPoint: process.env.MINIO_HOST,
+  port: parseInt(process.env.MINIO_PORT),
   useSSL: false,
   // accessKey: 'local-minio',
   // secretKey: 'local-test-secret',
-  accessKey: 'minioadmin',
-  secretKey: 'minioadmin',
+  accessKey: process.env.MINIO_USER,
+  secretKey: process.env.MINIO_PASSWORD,
 });
 /**
  * generate random file name
