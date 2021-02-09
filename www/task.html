@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+
+    <form method="post" enctype="multipart/form-data" id="task-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+      <label for="attachment">Attachment</label>
+      <input type="file" id="attachment" name="attachment" />
+
+      <button type="submit">Add New Task</button>
+    </form>
+
+    <hr />
+    <h4>Daftar Task</h4>
+
+    <ol id="task-list">
+        
+    </ol>
+
+    <script type="text/javascript" src="./task.js"></script>
+  </body>
+</html>

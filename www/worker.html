@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-worker">
+            <form action="#" method="post" enctype="multipart/form-data" id="form">
+                <div class="row">
+                    <label for="name">Masukkan Nama</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="row">
+                    <label for="address">Masukkan Alamat</label>
+                    <input type="text" name="address" id="address">
+                </div>
+    
+                <div class="row">
+                    <label for="email">Masukkan Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+    
+                <div class="row">
+                    <label for="phone">Masukkan Nomor telepon</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+    
+                <div class="row">
+                    <label for="biografi">Masukkan Biografi</label>
+                    <input type="text" name="biografi" id="biografi">
+                </div>
+    
+                <div class="row">
+                    <label for="photo">Masukkan Foto</label>
+                    <input type="file" name="photo" id="photo">
+                </div>
+    
+                <div class="row">
+                    <input type="submit" value="Simpan">
+                </div>
+            </form>
+        </div>
+    
+        <div class="list-worker">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Alamat</td>
+                        <td>Email</td>
+                        <td>No. Telp</td>
+                        <td>Biografi</td>
+                        <td>Aksi</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./worker.js"></script>
+</body>
+</html>
